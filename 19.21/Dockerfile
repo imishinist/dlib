@@ -26,5 +26,6 @@ RUN set -eux; \
           make install; \
         ); \
         apk del --no-network .build-deps; \
+        rm -rf /usr/local/lib64/cmake; \
         rm -rf /dlib-19.21; \
         rm v19.21.tar.gz
